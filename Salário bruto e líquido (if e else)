@@ -1,0 +1,25 @@
+# Entrada
+nome = input("Informe seu nome: ")
+hora_extra = float(input("Informe o número de horas extras: "))
+
+# Processamento
+salario_extra = (hora_extra * 10)
+bruto = (3 * 678 + salario_extra)
+
+if bruto > 2000:
+    inss = bruto * 0.12
+
+else:
+    inss = bruto * 0.05
+    
+if bruto > 2500:
+    ir = bruto * 0.2
+
+else:
+    ir = 0
+    
+liquido = bruto - inss - ir
+
+# Saída
+print("\nSalário bruto: R$%.2f" % (bruto))
+print("Salário líquido: R$%.2f" % (liquido))
