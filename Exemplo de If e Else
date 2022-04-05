@@ -1,0 +1,7 @@
+bateria = int(input("Digite a porcentagem da bateria do aparelho: "))
+
+if bateria > 25:
+    print("\nNão é necessário carregar o aparelho.")
+    
+else:
+    print("\nÉ necessário carregar o aparelho.")
